@@ -16,11 +16,14 @@ const App = () => {
     <div className="App">
       <BrowserRouter>
         <Header></Header>
-        <Routes>
-          <Route index element={<Home/>} />
-          <Route path="/movie/:imdbID" element={<MovieDetail/>} />
-          <Route path="*" element={<PageNotFound/>} />
-        </Routes>
+        <div className="container">
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/movie/:imdbID" element={<MovieDetail />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </div>
+
         <Footer />
       </BrowserRouter>
     </div>

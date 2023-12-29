@@ -19,7 +19,7 @@ const Header = () => {
       {/* Logo link */}
 
       <div className="logo">
-        <Link to="/">Movie app</Link>
+        <Link to="/">Cine details</Link>
       </div>
       <div className="search-bar">
         <form onSubmit={submitHandler}>
